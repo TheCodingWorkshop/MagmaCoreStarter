@@ -1,0 +1,164 @@
+user:
+  status_choices: [active: Active, pending: Pending, lock: Lock, trash: Trash]
+  additional_conditions:
+    status: active
+  selectors: []
+  records_per_page: 5
+  query: status
+  filter_by: ["lastname"]
+  filter_alias: s ## associated to html form input name attribute
+  sort_columns:
+    - firstname
+    - created_at
+    - modified_at
+  commander:
+    index:
+      import:
+        name: Import
+        icon: upload-outline
+        nav_header: WorkFlow
+        path: ''
+      export:
+        name: Export
+        icon: download-outline
+        path: ''
+
+
+role:
+  status_choices: []
+  additional_conditions: []
+  selectors: []
+  records_per_page: 5
+  query: ""
+  filter_by: ["role_name"]
+  filter_alias: s
+  sort_columns:
+    - role_name
+    - created_at
+    - modified_at
+
+permission:
+  status_choices: []
+  additional_conditions: []
+  selectors: []
+  records_per_page: 5
+  query: ""
+  filter_by: ["permission_name"]
+  filter_alias: s
+  sort_columns:
+    - permission_name
+    - created_at
+    - modified_at
+
+setting:
+  status_choices: []
+  additional_conditions: []
+  selectors: []
+  records_per_page: 5
+  query: ""
+  filter_by: ["setting_name"]
+  filter_alias: s
+  sort_columns:
+    - setting_name
+
+team:
+  status_choices: []
+  additional_conditions: []
+  selectors: []
+  records_per_page: 5
+  query: ""
+  filter_by: ["team_name"]
+  filter_alias: s
+  sort_columns:
+    - team_name
+    - created_at
+    - modified_at
+
+task:
+  status_choices: []
+  additional_conditions: []
+  selectors: []
+  records_per_page: 5
+  query: ""
+  filter_by: ["task_name"]
+  filter_alias: s
+  sort_columns:
+    - task_name
+    - created_at
+    - modified_at
+
+plugin:
+  status_choices: []
+  additional_conditions: []
+  selectors: []
+  records_per_page: 5
+  query: ""
+  filter_by: ["plugin_name"]
+  filter_alias: s
+  sort_columns:
+    - plugin_name
+    - created_at
+    - modified_at
+    -
+project:
+  status_choices: []
+  additional_conditions: []
+  selectors: []
+  records_per_page: 5
+  query: ""
+  filter_by: ["type", "status", "coordinator"]
+  filter_alias: s
+  sort_columns:
+    - type
+    - created_at
+    - modified_at
+    -
+menu:
+  status_choices: []
+  additional_conditions: []
+  selectors: []
+  records_per_page: 5
+  query: ""
+  filter_by: ["menu_name", "item_label"]
+  filter_alias: s
+  sort_columns:
+    - menu_name
+    - created_at
+    - modified_at
+    -
+notification:
+  status_choices: []
+  additional_conditions: []
+  selectors: []
+  records_per_page: 5
+  query: ""
+  filter_by: ["notify_title", "notify_type"]
+  filter_alias: s
+  sort_columns:
+    - notify_title
+    - notify_type
+    - created_at
+    -
+userLog:
+  status_choices: []
+  additional_conditions: []
+  selectors: []
+  records_per_page: 10
+  query: ""
+  filter_by: ["level_name"]
+  filter_alias: s
+  sort_columns:
+    - level_name
+    - created_at
+    -
+system:
+  status_choices: []
+  additional_conditions: []
+  selectors: []
+  records_per_page: 10
+  query: ""
+  filter_by: ["event_log_name"]
+  filter_alias: s
+  sort_columns:
+    - event_type
+    - created_at
