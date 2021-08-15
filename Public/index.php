@@ -27,9 +27,7 @@ if (is_file($composer)) {
 
 use MagmaCore\Utility\Yaml;
 use MagmaCore\Base\BaseApplication;
-use Symfony\Component\ErrorHandler\Debug;
 use MagmaCore\Logger\LogLevel;
-//Debug::enable();
 
 try {
     (new BaseApplication())
@@ -46,5 +44,3 @@ try {
 } catch (Exception $e) {
     echo $e->getMessage();
 }
-
-                                    
