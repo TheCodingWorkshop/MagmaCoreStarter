@@ -14,3 +14,7 @@ template_dir: Templates
 login:
   controller: security
   action: index
+
+logout:
+  controller: security
+  action: logout

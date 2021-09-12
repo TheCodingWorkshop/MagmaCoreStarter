@@ -5,4 +5,3 @@ services:
       register_route_feedback:
         App\Controller\SecurityController::indexAction:
           msg: Welcome you are now logged in
-
