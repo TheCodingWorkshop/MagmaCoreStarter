@@ -18,3 +18,7 @@ login:
 logout:
   controller: security
   action: logout
+
+register:
+  controller: registration
+  action: register
