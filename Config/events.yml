@@ -15,5 +15,5 @@ services:
     activation.subscriber:
       class: \App\EventSubscriber\ActivationActionSubscriber
       register_route_feedback:
-        App\Controller\ActivationActionSubscriber::activateAction:
+        App\Controller\ActivationController::activateAction:
           msg: You're account is now active
