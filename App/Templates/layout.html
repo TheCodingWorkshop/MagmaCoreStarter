@@ -3,11 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <title>{% yield title %}</title>
+    {@ addcss() @}
+    {% yield styles %}
+    {@ addjs([], 'header') @}
+
 </head>
 <body>
 
-{% yield content %}
-{@ templateExtension('uikit_flash_message') @}
+<div class="uk-section uk-section-primary">
+    <div class="uk-container uk-container-small">
+        <h1><span>{% yield page_header %}</span></h1>
+        <p class="uk-text-large uk-text-bolder">{% yield page_tagline %}</p>
+    </div>
+</div>
+<div class="uk-container uk-container-small uk-margin">
+    <div id="flash_message">{@ templateExtension('uikit_flash_message') @}
+    </div>
+    {% yield content %}
 
+</div>
+
+{@ addjs() @}
+{% yield scripts %}
 </body>
 </html>

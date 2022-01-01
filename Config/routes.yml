@@ -22,3 +22,7 @@ logout:
 register:
   controller: registration
   action: register
+
+activation/activate/{token:[\da-f]+}:
+  controller: activation
+  action: activate

@@ -1,6 +1,18 @@
 {% extends layout.html %}
 
+{% block title%}Login{% endblock %}
+
+{% block page_header%}Sign Up{% endblock %}
+{% block page_tagline %}Please login to access the site content{% endblock %}
+
+{% block styles %}
+{% endblock %}
+
 {% block content %}
-<h1>Security</h1>
-{{ $form }}
+    {{ $form }}
+    <div class="uk-child-width-1-2@s uk-grid-small">
+        <p class="uk-text-lead">Don't have an account yet?
+        <a class="uk-button uk-button-small uk-button-text uk-button-left" href="/register">Register</a>
+        </p>
+    </div>
 {% endblock %}

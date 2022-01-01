@@ -23,6 +23,7 @@ class HomeController extends BaseController
             'first_car' => 'Ford',
             'first_pet' => 'Cat'
         ]);
+
     }
 
 }

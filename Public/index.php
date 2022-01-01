@@ -14,7 +14,7 @@ declare(strict_types=1);
  * Load the composer autoloader library which enables us to bootstrap the application
  * and initialize the necessary components.
  */
-defined('ROOT_PATH') or define('ROOT_PATH', realpath(dirname(dirname(__FILE__))));
+defined('ROOT_PATH') or define('ROOT_PATH', realpath(dirname(__FILE__, 2)));
 defined('CONFIG_PATH') or define("CONFIG_PATH", ROOT_PATH . '/' . "Config/");
 defined('CORE_CONFIG_PATH') or define("CORE_CONFIG_PATH", ROOT_PATH . '/vendor/magmacore/magmacore/src/' . "System/Config/");
 defined('TEMPLATE_CACHE') or define("TEMPLATE_CACHE", ROOT_PATH . '/' . "App/Templates/Cache");

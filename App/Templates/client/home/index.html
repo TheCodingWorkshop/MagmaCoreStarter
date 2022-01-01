@@ -3,11 +3,12 @@
 {% block title %} Homepage {% endblock %}
 
 {% block content %}
-<h1>Ricardo Miller</h1>
+<h1>{{ $privilege_user->fullname }}</h1>
 
 {% var_dump($privilege_user) %}
 <br>
 <br>
 <a href="/login">Login</a>
 <a href="/logout">Logout</a>
+<a href="/register">Register</a>
 {% endblock %}

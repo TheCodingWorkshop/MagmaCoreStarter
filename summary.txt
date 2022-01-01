@@ -1,0 +1,9 @@
+1. GitHub and packagist - setting up the application and making it available through packagist
+2. Application introduction
+3. first controller class
+4. templating engine
+5. Building the login system video 1-5
+6. Middleware introduction
+7. Logout system
+8. implementing registration system
+9. single action class introduction to newAction class
