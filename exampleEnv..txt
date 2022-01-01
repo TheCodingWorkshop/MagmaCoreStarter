@@ -1,6 +1,6 @@
 DB_DRIVER=mysql
 DB_HOST=127.0.0.1
-DB_NAME=lavacms
+DB_NAME=
 DB_PASSWORD=
 DB_USER=root
 DB_PREFIX=
@@ -10,3 +10,11 @@ DB_CHARSET=utf8mb4
 DB_ENGINE=InnoDB
 DB_COLLATE=
 DB_FORMAT=dynamic
+
+SMTPDebug=0
+SMTPAuth=true
+SMTPSecure=tls
+Username=
+Password=
+Host=
+Port=2525
